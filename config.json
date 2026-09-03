@@ -1,0 +1,6 @@
+{
+    "allowedOrigins": [
+        "http://localhost:4200",
+        "https://sso-admin.4iisolutions.com"
+    ]
+}

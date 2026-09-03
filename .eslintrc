@@ -1,0 +1,66 @@
+{
+    "root": true,
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2017,
+        "parser": "@typescript-eslint/parser",
+        "EXPERIMENTAL_useSourceOfProjectReferenceRedirect": true,
+        "project": "./tsconfig.json"
+    },
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "airbnb-base",
+        "airbnb-typescript/base"
+    ],
+    "rules": {
+        "max-classes-per-file" :"off",
+        "no-unused-vars": "warn",
+        "import/no-extraneous-dependencies": "off",
+        "import/prefer-default-export": "off",
+        "@typescript-eslint/no-unused-vars": "warn",
+        "no-plusplus": "off",
+        "no-tabs": "off",
+        "indent": "off",
+        "@typescript-eslint/indent": "off",
+        "class-methods-use-this": "off",
+        "linebreak-style": "off",
+        "semi": [
+            "error",
+            "always"
+        ],
+        "quotes": "off",
+        "@typescript-eslint/quotes": [
+            "error",
+            "double"
+        ],
+        "camelcase": "off",
+        "@typescript-eslint/naming-convention": [
+            "error",
+            {
+                "selector": "default",
+                "format": [
+                    "camelCase",
+                    "PascalCase",
+                    "UPPER_CASE"
+                ]
+            }
+        ],
+        "max-len": [
+            "warn",
+            {
+                "code": 130,
+                "ignoreComments": true,
+                "ignoreUrls": true,
+                "ignoreStrings": true,
+                "ignoreTemplateLiterals": true
+            }
+        ]
+    }
+}
